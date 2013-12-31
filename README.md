@@ -1,12 +1,5 @@
 Trinket Rover
 ============
-Autonomous micro-rover with super mega awesome mustache technique. 
-
-
-
-
-####Who's your daddy and what does he do?
-------
 STEM / STEAM curriculum is gaining momentum in k-12 education. It's exciting, but there are some significant obstacles to manage: not all teachers have the technical expertise (or time) to generate curriculum, cost of materials can be prohibitive, and sourcing good quality components can be time consuming.
 
 The aim of this project is to provide a low-cost but high-quality open software / open hardware platform for teaching robotics to students of all ages.
