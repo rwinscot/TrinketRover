@@ -13,6 +13,10 @@ servo_lug_length	=  5.00 ;
 servo_lug_depth		=  2.30 ;
 servo_lug_offset_F	= 16.00 ; 
 servo_height_C		= 26.00 ;
+
+servo_horn_hub_depth	= 4.5 ;
+servo_horn_hub_radius	= 3.88 ; 
+servo_horn_arm_depth	= 2.4 ;
  
 axel_radius 		=  4.00	;
 axel_support_length = 15.00 ;

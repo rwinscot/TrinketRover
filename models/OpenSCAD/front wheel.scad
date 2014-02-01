@@ -23,8 +23,8 @@ module solid_shape(){
 
 module tooth(){
 	hull(){
-	#cube ([tooth_width, wheel_radius+ cog_height/2, cog_width]);
+	cube ([tooth_width, wheel_radius+ cog_height/2, cog_width]);
 	translate([tooth_width/2,wheel_radius + cog_height, 0])
-		#cylinder(r=tooth_width/3,h = cog_width);
+		cylinder(r=tooth_width/3,h = cog_width);
 	}
 }
