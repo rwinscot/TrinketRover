@@ -34,11 +34,13 @@ nut_trap_r			=  6.54/2	;
 wheel_width			= 18.00	;
 hub_radius			=  4.20	;
 hub_depth			=  2.00	;
-cog_number			=  5	;
-cog_width			=  7.00	;
-cog_height			=  2	;
+cog_number			=  6	;
+cog_width			=  6.00	;
+cog_height			=  3.40	;
 tooth_width			=  4.00	;
+tooth_gap			=  6.00 ;
 m3_screw_rad		=  1.15	;
+
 
 
 // *** Calculated Dimensions ***
@@ -47,7 +49,7 @@ m3_screw_rad		=  1.15	;
 servo_holder_width	= servo_length + servo_lug_length * 2 ;
 servo_holder_thickness = servo_lug_length	;
 
-wheel_radius = (cog_number*(tooth_width +8))/(2*3.14);
+wheel_radius = (cog_number*(tooth_width + tooth_gap))/(2*3.14);
 echo("Wheel Diameter: ",wheel_radius*2);
 
 //axel_ext			= 25.88 ; 

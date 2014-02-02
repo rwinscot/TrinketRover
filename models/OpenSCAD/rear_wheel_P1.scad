@@ -37,9 +37,9 @@ translate([wheel_radius*2 + cog_height*2,0,0])
 			cube([50,50,50]);
 
 	translate([0,+ servo_horn_hub_radius +(wheel_radius - servo_horn_hub_radius)/2,0])
-		cylinder (r = lug_rad, h =  6);
+		cylinder (r = lug_rad+0.2, h =  6);
 	translate([0, -(servo_horn_hub_radius +(wheel_radius - servo_horn_hub_radius)/2),0])
-		cylinder (r = lug_rad, h =  6);
+		cylinder (r = lug_rad+0.2, h =  6);
 		
 	}
 
@@ -54,5 +54,6 @@ module hornCutout(){
 				cylinder(r=4.3/2, h = thickness);				
 		}
 }
+
 
 
