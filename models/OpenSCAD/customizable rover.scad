@@ -18,10 +18,14 @@ difference(){
 	translate ([base_width/2, 3.18 ,0 ]) mount_cout();
 }
 	translate([0,base_length + servo_holder_thickness - servo_holder_width,base_height])
-		dummy_servo();
+		%dummy_servo();
 	translate([-(axel_ext + hub_depth),axel_radius,axel_height])
 	rotate([0,90,0])
-	#front_wheel();
+	%front_wheel();
+	
+	translate([-(axel_ext + hub_depth),base_length -servo_lug_length - servo_width/2,axel_height])
+	rotate([0,90,0])
+	%front_wheel();
 
 // *** Cutouts ***
 
@@ -63,7 +67,7 @@ module mount (){
 
 module dummy_servo(){
 	translate([servo_lug_offset_F+servo_lug_depth-servo_height,0,0])
-		#cube ([servo_height, servo_length, servo_width]);	
+		cube ([servo_height, servo_length, servo_width]);	
 	translate([0,-servo_lug_length,0])
 		cube([servo_lug_depth, servo_lug_length*2 + servo_length, servo_width]);
 	translate([servo_lug_offset_F+servo_lug_depth,servo_length - servo_width/2,servo_width/2])

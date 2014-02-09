@@ -17,6 +17,7 @@ servo_height_C		= 26.00 ;
 servo_horn_hub_depth	= 4.5 ;
 servo_horn_hub_radius	= 3.88 ; 
 servo_horn_arm_depth	= 2.4 ;
+servo_horn_arm_thickness = 1.5;
  
 axel_radius 		=  4.00	;
 axel_support_length = 15.00 ;
@@ -53,7 +54,7 @@ wheel_radius = (cog_number*(tooth_width + tooth_gap))/(2*3.14);
 echo("Wheel Diameter: ",wheel_radius*2);
 
 //axel_ext			= 25.88 ; 
-axel_ext			= (wheel_width-hub_depth)-(servo_lug_offset_F+servo_lug_depth-servo_height_C);
+axel_ext			= (wheel_width-hub_depth)-(servo_lug_offset_F+servo_lug_depth-servo_height_C)+.5;
 echo("Axel Extension: ",axel_ext);
 axel_height 		=  base_height + servo_width/2	;
 
